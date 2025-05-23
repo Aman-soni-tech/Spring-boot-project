@@ -1,0 +1,80 @@
+/* 📚 Overall Page Styling */
+.book-list-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center/cover;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* 🏆 Background Dark Overlay for Better Readability */
+.book-list-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* 👈 Dark Overlay */
+    z-index: -1;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* 🔥 Book List Button as Logo */
+.book-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Green Theme */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* 🏆 Hover Animation */
+.book-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+}
+
+/* ✨ Book Cards */
+.book-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    border-left: 5px solid #4CAF50;
+    transform: translateY(10px);
+}
+
+/* 🏆 Hover Effects */
+.book-card:hover {
+    transform: scale(1.05) translateY(5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    border-left: 5px solid #2E7D32;
+}
+.h2{
+    color: white;
+}
+.btn{
+    text-decoration: none; 
+}
